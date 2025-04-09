@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Rock Paper Scissors!</h1>
+        <p>Can you beat the computer in a game of Rock Paper Scissors?</p>
+      </header>
+      <main>
+        <div class="container-game">
+          <div class="row-ui">
+            <div class="player-ui">
+              <div class="wrapper-player-text">
+                <p>Make your choice...</p>
+              </div>
+              <div class="top-row">
+                <button class="button-round" id="btn-rock" title="Rock">
+                  <img src="assets/image-rock.png" alt="" />
+                </button>
+                <button class="button-round" id="btn-paper" title="Paper">
+                  <img src="assets/image-paper.png" alt="" />
+                </button>
+              </div>
+              <div class="bottom-row">
+                <button id="btn-scissors" class="button-round" title="Scissors">
+                  <img src="assets/image-scissors.png" alt="" />
+                </button>
+              </div>
+              <div class="score">
+                <div class="result" id="player-game1"><p>1</p></div>
+                <div class="result" id="player-game2"><p>2</p></div>
+                <div class="result" id="player-game3"><p>3</p></div>
+                <div class="result" id="player-game4"><p>4</p></div>
+                <div class="result" id="player-game5"><p>5</p></div>
+              </div>
+            </div>
+            <div class="computer-ui">
+              <div class="wrapper-computer-text">
+                <p>The Computer picked...</p>
+              </div>
+              <div class="wrapper-computer-choice">
+                <div class="computer-choice">
+                  <p id="question-mark">?</p>
+                  <img id="computer-rock" src="assets/image-rock.png" alt="" />
+                  <img
+                    id="computer-paper"
+                    src="assets/image-paper.png"
+                    alt=""
+                  />
+                  <img
+                    id="computer-scissors"
+                    src="assets/image-scissors.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="score">
+                <div class="result" id="computer-game1"><p>1</p></div>
+                <div class="result" id="computer-game2"><p>2</p></div>
+                <div class="result" id="computer-game3"><p>3</p></div>
+                <div class="result" id="computer-game4"><p>4</p></div>
+                <div class="result" id="computer-game5"><p>5</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons-row">
+            <div class="chat-log">
+              <p id="chat-log">Which choice will you make?</p>
+            </div>
+
+            <button id="btn-reset">Reset</button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p class="credits">
+          &#174;2025 | Made by Ennio Esseboom. All rights reserved.
+        </p>
+        <a
+          href="https://github.com/ehesseboom?tab=repositories"
+          target="_blank"
+          title="Check out my Github!"
+          id="btn-github"
+          ><i class="ri-github-fill"></i
+        ></a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
