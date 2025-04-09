@@ -37,6 +37,7 @@ body {
   align-items: center;
   padding: 2rem 2rem 1rem 2rem;
   position: relative;
+  gap: 2rem;
 }
 
 header {
@@ -86,7 +87,6 @@ footer a:hover {
 }
 
 main {
-  height: 100%;
   width: 100%;
   display: grid;
   place-items: center;
@@ -99,7 +99,6 @@ main {
   flex-direction: column;
   padding: 1rem;
   gap: 2rem;
-  margin-top: -4rem;
 }
 
 img {
@@ -284,10 +283,6 @@ img {
   }
 
   body {
-    min-height: 120vh;
-  }
-
-  main {
     height: auto;
   }
 
